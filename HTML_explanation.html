@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>How to Build a Webpage using HTML</title>
+  <title>Hello World!</title>
+  <link rel="icon" href="planet-earth.png" />
   <style>
     :root{
       --bg: #f7fafc;
@@ -57,24 +58,26 @@
       <h2>What is a Website?</h2>
       <p>A website is a collection of HTML elements styled by CSS. HTML creates the structure of the website, and CSS makes it look good.</p>
       <h2>Basics:</h2>
-      <p>Start with <pre>&lt;!doctype html&gt;</pre>Alway start with this. Next add<pre>&lt;html lang="en"&gt;</pre>These two elements are essential for all HTML pages.</p>
-      <p><pre>&lt;head&gt;</pre>This represents a collection a metadata for the document.</p>
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;Simple page&lt;/title&gt;
-    &lt;style&gt;
+      <p>Start with <pre>&lt;!doctype html&gt;</pre>Always start and close with the &lt;html&gt; tag. Next add<pre>&lt;html lang="en"&gt;</pre>Those two elements are essential for all HTML pages.</p>
+      <p>The &lt;head&gt; tag represents a collection a metadata for the document:<pre>&lt;head&gt;</pre></p>
+      <p>The &lt;meta charset&gt; defines the character set for the document. uft-8 is the most commonly used character set:<pre>&lt;meta charset="utf-8" /&gt;</pre></p>
+      <p>The &lt;title&gt; tag creates the title<pre>&lt;title&gt;Simple page&lt;/title&gt;</pre></p>
+      <p>Place the CSS code inside of the &lt;style&gt;&lt;/style&gt;<pre>&lt;style&gt;
       body { font-family: system-ui; padding:20px; }
       .btn { background:#2563eb; color:white; padding:8px 12px; border-radius:8px; }
-    &lt;/style&gt;
-  &lt;/head&gt;
+    &lt;/style&gt;</pre>This is the CSS styling. It controls what the website looks like.</p>
+  <pre>&lt;/head&gt;</pre>
+      <p>The &lt;body&gt; tag contains all the content of an HTML document, such as text, hyperlinks, images, tables, and lists.<pre>&lt;body&gt;
   &lt;body&gt;
-    &lt;h1&gt;Hello!&lt;/h1&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
     &lt;button class="btn"&gt;Click&lt;/button&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </pre>
     </main>
     <footer>
-      <p>https://www.w3schools.com/w3css/w3css_templates.asp</p>
+      <p>Free CSS templates available at <a href="https://www.w3schools.com/w3css/w3css_templates.asp">W3 Schools CSS Templates</a></p>
+      <p>Favicon taken from <a href="https://www.flaticon.com/free-icons/world" title="world icons">World icons created by Freepik - Flaticon</a></p>
     </footer>
   </div>
 </body>
