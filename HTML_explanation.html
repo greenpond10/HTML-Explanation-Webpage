@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Preview — Simple HTML & CSS Site</title>
+  <style>
+    :root{
+      --bg: #f7fafc;
+      --accent: #2563eb;
+      --muted: #6b7280;
+      --radius: 12px;
+      --max-width: 800px;
+      --padding: 18px;
+      font-family: system-ui, sans-serif;
+    }
+    body{
+      margin:0;
+      background: linear-gradient(180deg, var(--bg), #eef2ff 120%);
+      color:#111827;
+      line-height:1.5;
+      padding:30px 16px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--max-width);
+    }
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .logo{
+      background:var(--accent);
+      color:white;
+      font-weight:700;
+      padding:10px 14px;
+      border-radius:10px;
+    }
+    h1{font-size:1.45rem; margin:0}
+    p.lead{margin:6px 0 0; color:var(--muted)}
+    main{
+      background:white;
+      border-radius:var(--radius);
+      padding:var(--padding);
+      box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+    }
+    footer{margin-top:14px; color:var(--muted); font-size:0.9rem}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="logo">HTML + CSS</div>
+      <div>
+        <h1>How to Create a Website using HTML &amp; CSS</h1>
+        <p class="lead">A compact, beginner-friendly example you can open and tinker with right now.</p>
+      </div>
+    </header>
+    <main>
+      <h2>Quick concept</h2>
+      <p>A website is a collection of <strong>HTML</strong> elements (the structure) styled by <strong>CSS</strong> (appearance).</p>
+      <h2>Example snippet</h2>
+      <pre>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Simple page&lt;/title&gt;
+    &lt;style&gt;
+      body { font-family: system-ui; padding:20px; }
+      .btn { background:#2563eb; color:white; padding:8px 12px; border-radius:8px; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello!&lt;/h1&gt;
+    &lt;button class="btn"&gt;Click&lt;/button&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+    </main>
+    <footer>
+      <p>Tip: Move CSS into a separate file (like this one uses) to keep code clean.</p>
+    </footer>
+  </div>
+</body>
+</html>
